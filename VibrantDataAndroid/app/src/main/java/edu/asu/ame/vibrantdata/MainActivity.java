@@ -22,7 +22,7 @@ public class MainActivity extends ActionBarActivity {
     static final int    AUDIO_FRAME_RATE             = 44100;
     static final double AUDIO_TWO_PI_OVER_FRAME_RATE = 2 * Math.PI / AUDIO_FRAME_RATE;
 
-    static final double SYNTH_MIN_GAIN               = -50.0;
+    static final double SYNTH_MIN_GAIN               = -24.0;
     static final double SYNTH_PULSE_DURATION         = 0.08;
     static final double SYNTH_RESONANT_FREQUENCY     = 88.0;
 
@@ -204,7 +204,7 @@ public class MainActivity extends ActionBarActivity {
         if(decibels == SYNTH_MIN_GAIN)
             amp = 0;
         else
-            amp = Math.pow(2.0, decibels / 6.0);
+            amp = Math.pow(10.0, decibels / 10.0);
     }
 
     /*----------------------------------------------------------------------------------------*/
@@ -213,7 +213,7 @@ public class MainActivity extends ActionBarActivity {
         if(amp == 0)
             result = SYNTH_MIN_GAIN;
         else
-            result = 6 * Math.log10(amp) / Math.log10(2);
+            result = 10 * Math.log10(amp);
 
         return result;
     }

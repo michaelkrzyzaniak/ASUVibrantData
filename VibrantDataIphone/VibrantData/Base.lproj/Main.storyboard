@@ -16,21 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgL-cn-m6X">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ola-pk-5fc">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="TCP">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" title="TCP"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="44" y="85" width="30" height="30"/>
+                                    <rect key="frame" x="204" y="305" width="92" height="58"/>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="205" width="92" height="58"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="305" width="92" height="58"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="297" y="305" width="92" height="58"/>
                                 </variation>
                                 <connections>
-                                    <action selector="set_wants_tcp:" destination="tHc-Tl-LJD" eventType="touchUpInside" id="CO6-xy-kU5"/>
+                                    <action selector="set_wants_tcp:" destination="tHc-Tl-LJD" eventType="touchUpInside" id="1YN-Sh-K38"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFd-U9-QG1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBZ-RO-xhb">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -38,13 +45,22 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="150" y="85" width="32" height="30"/>
+                                    <rect key="frame" x="304" y="305" width="92" height="58"/>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="204" y="205" width="92" height="58"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="204" y="305" width="92" height="58"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="397" y="305" width="92" height="58"/>
                                 </variation>
                                 <connections>
-                                    <action selector="set_wants_udp:" destination="tHc-Tl-LJD" eventType="touchUpInside" id="egd-Hh-jQV"/>
+                                    <action selector="set_wants_udp:" destination="tHc-Tl-LJD" eventType="touchUpInside" id="ygS-ea-TQG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgH-IF-rfz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8at-DK-eZO">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -52,13 +68,22 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="35" y="135" width="48" height="30"/>
+                                    <rect key="frame" x="204" y="437" width="92" height="58"/>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="337" width="92" height="58"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="437" width="92" height="58"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="297" y="437" width="92" height="58"/>
                                 </variation>
                                 <connections>
-                                    <action selector="set_wants_secure:" destination="tHc-Tl-LJD" eventType="touchUpInside" id="OJO-E3-9nz"/>
+                                    <action selector="set_wants_secure:" destination="tHc-Tl-LJD" eventType="touchUpInside" id="GIN-kj-64c"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2N-eu-Oek">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8q6-Dm-kqr">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -67,13 +92,22 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="133" y="135" width="66" height="30"/>
+                                    <rect key="frame" x="304" y="437" width="92" height="58"/>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="204" y="337" width="92" height="58"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="204" y="437" width="92" height="58"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="397" y="437" width="92" height="58"/>
                                 </variation>
                                 <connections>
-                                    <action selector="set_wants_unsecure:" destination="tHc-Tl-LJD" eventType="touchUpInside" id="bww-wX-vvV"/>
+                                    <action selector="set_wants_unsecure:" destination="tHc-Tl-LJD" eventType="touchUpInside" id="VRo-EC-NEO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLU-jb-zkc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5z-KW-kVk">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -82,13 +116,22 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="35" y="188" width="64" height="30"/>
+                                    <rect key="frame" x="304" y="371" width="92" height="58"/>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="204" y="271" width="92" height="58"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="204" y="371" width="92" height="58"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="397" y="371" width="92" height="58"/>
                                 </variation>
                                 <connections>
-                                    <action selector="set_wants_outgoing:" destination="tHc-Tl-LJD" eventType="touchUpInside" id="LpA-ZB-mNq"/>
+                                    <action selector="set_wants_outgoing:" destination="tHc-Tl-LJD" eventType="touchUpInside" id="tn5-TA-0ue"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmD-8H-C7S">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agC-pu-BcU">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -97,32 +140,41 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="143" y="188" width="64" height="30"/>
+                                    <rect key="frame" x="204" y="371" width="92" height="58"/>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="271" width="92" height="58"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="371" width="92" height="58"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="297" y="371" width="92" height="58"/>
                                 </variation>
                                 <connections>
-                                    <action selector="set_wants_incoming:" destination="tHc-Tl-LJD" eventType="touchUpInside" id="AYa-OI-aBq"/>
+                                    <action selector="set_wants_incoming:" destination="tHc-Tl-LJD" eventType="touchUpInside" id="gfh-H1-7Xn"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="TgL-cn-m6X"/>
-                                <exclude reference="GFd-U9-QG1"/>
-                                <exclude reference="kgH-IF-rfz"/>
-                                <exclude reference="d2N-eu-Oek"/>
-                                <exclude reference="wLU-jb-zkc"/>
-                                <exclude reference="mmD-8H-C7S"/>
+                                <exclude reference="ola-pk-5fc"/>
+                                <exclude reference="eBZ-RO-xhb"/>
+                                <exclude reference="8at-DK-eZO"/>
+                                <exclude reference="8q6-Dm-kqr"/>
+                                <exclude reference="X5z-KW-kVk"/>
+                                <exclude reference="agC-pu-BcU"/>
                             </mask>
                         </variation>
-                        <variation key="heightClass=regular">
+                        <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="TgL-cn-m6X"/>
-                                <include reference="GFd-U9-QG1"/>
-                                <include reference="kgH-IF-rfz"/>
-                                <include reference="d2N-eu-Oek"/>
-                                <include reference="wLU-jb-zkc"/>
-                                <include reference="mmD-8H-C7S"/>
+                                <include reference="ola-pk-5fc"/>
+                                <include reference="eBZ-RO-xhb"/>
+                                <include reference="8at-DK-eZO"/>
+                                <include reference="8q6-Dm-kqr"/>
+                                <include reference="X5z-KW-kVk"/>
+                                <include reference="agC-pu-BcU"/>
                             </mask>
                         </variation>
                     </view>

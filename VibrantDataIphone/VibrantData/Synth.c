@@ -12,7 +12,7 @@
 #include <math.h>
 #define  SYNTH_RESONANT_FREQUENCY 88 
 #define  SYNTH_PULSE_DURATION     0.08
-#define  SYNTH_MIN_GAIN           -25
+#define  SYNTH_MIN_GAIN           -24
 
 /*OpaqueSynthStruct---------------------------------------*/
 struct OpaqueSynthStruct
@@ -90,7 +90,7 @@ void synth_set_gain(Synth* self, double decibels)
   if(decibels == SYNTH_MIN_GAIN)
     self->amp = 0;
   else
-    self->amp = pow(2.0, decibels/6.0);
+    self->amp = pow(10, decibels/10.0);
 }
 
 /*--------------------------------------------------------*/
@@ -100,7 +100,7 @@ double synth_get_gain(Synth* self)
   if(self->amp == 0)
     result = SYNTH_MIN_GAIN;
   else
-    result = 6 * log2(self->amp);
+    result = 10 * log10(self->amp);
     
   return result;
 }
@@ -118,7 +118,7 @@ void    synth_set_vibration_magnitude(Synth* self, double coefficient)
   self->vibration_magnitude = coefficient;
   
   double decibels = synth_scalef(coefficient, 0, 1, SYNTH_MIN_GAIN, 0);
-  double spacing     = synth_scalef(coefficient, 0, 1, 2, SYNTH_PULSE_DURATION);
+  double spacing     = synth_scalef(coefficient, 0, 1, 2, SYNTH_PULSE_DURATION-0.1);
   
   synth_set_gain(self, decibels);
   synth_set_pulse_spacing(self, spacing);
